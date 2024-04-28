@@ -1,0 +1,110 @@
+.addFriend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh; 
+}
+.friendsContainer{
+    border-radius: 35px;
+    background-color: #81b39bbe;
+    box-shadow: 10px 10px 5px #00010161;
+    margin-top: 20px; 
+    width: calc(50% - 20px); 
+    height: 300px; 
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap;
+    padding: 20px; /* Add padding */
+    margin: 10px; /* Add margin between the child containers */
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.friendsContainer h2{
+    font-size: xx-large;
+    font-family:'IBM Plex Mono', monospace;
+    text-shadow: #000101 2px 2px 10px;
+    font-weight: 400;
+    color: white;
+}
+.friendsContainer ul {
+    list-style: none;
+    padding-left: 20px; 
+    font-family:'IBM Plex Mono', monospace;
+    color:white;
+    text-shadow: #000101 2px 2px 10px;
+    font-weight: 400;
+}
+
+.friendsContainer ul li {
+    background: url('./img/giphy.gif') no-repeat; 
+    border-radius: 2px;
+    background-size: 30px 30px; 
+    padding-left: 40px; 
+    line-height: 2.3; 
+}
+.formContainer{
+    border-radius: 35px;
+    height: 300px; 
+    width: calc(50% - 20px);
+    background-color: #81b39bbe;
+    box-shadow: 10px 10px 5px #00010161;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Add padding */
+    margin: 10px; /* Add margin between the child containers */
+  
+}
+.formContainer label {
+    display:grid;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-family:'IBM Plex Mono', monospace;
+    text-shadow: #000101 2px 2px 10px;
+    color: white;
+
+}
+.formContainer form button {
+    background-color: #81b39bbe;
+    box-shadow: 10px 10px 5px #00010161;
+    border-radius: 35px;
+    width: 75%;
+    height: 75%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-family:'IBM Plex Mono', monospace;
+    text-shadow: #000101 2px 2px 10px;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+
+.formContainer form button:hover {
+    background-color: #f2dfd0;
+}
+
+.formContainer input[type="text"],
+.formContainer input[type="password"] {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2dfd0; 
+    box-shadow: 8px 8px 5px #00010161;
+    color: black; 
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    display:bold;
+}

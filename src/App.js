@@ -1,24 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar';
+import './components/NavBar.css';
+import Home from './Home';
+import './Home.css';
+import About from './about';
+import './about.css'
+import Contact from './contact';
+import './contact.css'
+import AddFriends from './AddFriends';
+import './AddFriends.css'
+import { useRef } from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
+
+  const bemyfriendRef = useRef(null);
+  const scrollToSection = () => {
+    if (bemyfriendRef.current) {
+      window.scrollTo({
+        top: bemyfriendRef.current.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar scrollToSection={scrollToSection}></NavBar>
+        <div className='content'>
+          <Switch>
+            <Route exact path="/">
+            <div><Home></Home></div>
+            <div ref={bemyfriendRef}><AddFriends path="/bemyfriend"></AddFriends></div>
+            </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route> 
+          </Switch>
+          </div>
+      </div>
+  </Router>
   );
 }
 
