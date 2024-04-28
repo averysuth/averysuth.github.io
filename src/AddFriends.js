@@ -1,19 +1,9 @@
 import React from 'react'
 import {getFirestore, collection, getDocs, addDoc} from 'firebase/firestore'
-import {initializeApp} from 'firebase/app';
 import {useState, useEffect} from 'react'
 import {useRef} from 'react'
+import { db } from './firebaseConfig';
 
-const firebaseConfig = {
-    apiKey: "AIzaSyCoMFBqGthmqHTMlnVC8q2yyAGtxvMlyyk",
-    authDomain: "averywebsite-d99e1.firebaseapp.com",
-    projectId: "averywebsite-d99e1",
-    storageBucket: "averywebsite-d99e1.appspot.com",
-    messagingSenderId: "44423293449",
-    appId: "1:44423293449:web:02b04a49e224f389d426d8",
-    measurementId: "G-S1ET6PJ77N"
-  };
-    initializeApp(firebaseConfig);
 
 function AddFriends() {
     const [firstname, setFirstname] = useState('');
@@ -21,7 +11,6 @@ function AddFriends() {
     const [friends, setFriends] = useState([]);
 
     useEffect(() => {
-        const db = getFirestore();
         const colref = collection(db, 'friends');
     
         getDocs(colref)
