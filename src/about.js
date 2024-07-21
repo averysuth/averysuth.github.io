@@ -8,7 +8,7 @@ import ReactCardFlip from 'react-card-flip'
 import dance from './img/averyDancing.jpg';
 
 function About() {
-    const [isFlipped, setIsFlipped] = useState([false,false,false,false, false]);
+    const [isFlipped, setIsFlipped] = useState([false,false,false,false,false]);
 
 
     const handleClick = (index) => {

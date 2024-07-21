@@ -10,10 +10,13 @@ function AddFriends() {
     const [lastname, setLastname] = useState('');
     const [friends, setFriends] = useState([]);
 
+    // Effect hook to fetch friends data from Firestore when the component mounts
     useEffect(() => {
+      //refernce to the friends database 
         const colref = collection(db, 'friends');
-    
+        //get the documents from the database 
         getDocs(colref)
+        //then update friends state with each collected data 
           .then((snapshot) => {
             let friendsData = [];
             snapshot.docs.forEach((doc) => {
@@ -26,11 +29,12 @@ function AddFriends() {
           });
       }, []);
 
+      //function to handle form submission 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        const db = getFirestore();
-        const colref = collection(db, 'friends');
-    
+        const db = getFirestore(); //get the database 
+        const colref = collection(db, 'friends'); //refernce to db 
+        //add to the db 
         addDoc(colref, {
             firstname: firstname,
             lastname: lastname
@@ -46,7 +50,7 @@ function AddFriends() {
 
     const bemyfriendRef = useRef(null);
 
-  return (
+  return ( //render the component 
     <div className='addfriend' ref={bemyfriendRef}>
         <div className='container'>
         <div className="formContainer">

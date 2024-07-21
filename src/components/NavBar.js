@@ -2,9 +2,17 @@ import React from 'react'
 import {Link } from 'react-router-dom';
 
 function NavBar({ scrollToSection }) {
+    /*
     const handleClick = () => {
         scrollToSection("bemyfriend");
     };
+
+    <li className="nav-item">
+                    <Link to="/" onClick = {handleClick} className="nav-links">
+                        BeMyFriend?
+                    </Link>
+    </li>
+    */
   return (
     <>
         <style>
@@ -26,13 +34,13 @@ function NavBar({ scrollToSection }) {
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/contact" className="nav-links">
-                        Contact
+                    <Link to="/projects" className="nav-links">
+                        Projects
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/" onClick = {handleClick} className="nav-links">
-                        BeMyFriend?
+                    <Link to="/contact" className="nav-links">
+                        Contact
                     </Link>
                 </li>
                </ul>

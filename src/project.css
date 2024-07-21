@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.project{
+    min-height: 100vh; 
+}
+.project h2{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: xx-large;
+    text-shadow: #000101 2px 2px 10px;
+    color: white;
+    font-weight: 400;
+}
+.projectcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text horizontally */
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+}
+.card img{
+    width: 500px;
+    height: 500px;
+    padding: auto;
+    margin: 10px;
+    border-radius: 35px;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px #00010161;
+
+}
+
+.card p{   
+    background-color: #f2dfd0;
+    border: 20px white;
+    margin: 20px;   
+    font-size: large;
+    font-family:'IBM Plex Mono', monospace;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #00010161;
+    width: 500px;
+    height: 500px;
+    color: black;
+   
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .card:hover{
+      animation: card-spin infinite 1s linear;
+      
+    }
+  }
+@keyframes card-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(2deg);
+    }
+  }
