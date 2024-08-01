@@ -17,11 +17,11 @@ function About() {
         setIsFlipped(newIsFlipped);
     }
 
-    const averywords = 'Hi my name is Avery Sutherland and I am a sophomore at Dartmouth College studying computer science. I am SUPER eager to learn as much as I can in CS, as I am just starting out! ';
-    const manitoulinwords = 'I am from a small island called Birch Island or Whitefish River First Nation that is near Manitoulin Island (largest freshwater island in the world). We are surrounded by water and the sunsets during the summer are legendary!';
-    const agwords = 'I am also super interested in Film! I am currently working on season 3 of Acting Good which is an indigenous comedy show based in Canada. I play Chickadee!'
+    const averywords = 'Hi my name is Avery Sutherland and I am a junior at Dartmouth College studying computer science. I am SUPER eager to learn as much as I can in CS, as I am just starting out! ';
+    const manitoulinwords = 'I am from a small island called Birch Island or Whitefish River First Nation that is near Manitoulin Island. Fun fact, Manitoulin is the largest freshwater island in the world. We are surrounded by water and the sunsets during the summer are legendary!';
+    const agwords = 'I am also super interested in Film! I am currently starring in Season 3 of Acting Good which is an indigenous comedy show based in Canada. I play Chickadee! Look out for season 3 airing in October on CTV, Crave and APTN'
     const studywords = 'My Skills : java, c, react, html, css, js, firebase, python, react native --> Current Project: I am currently working on an app called Moments that allows users to choose any place on a map and mark it with thier own picture, title and caption of the moment!'
-    const dancing = 'Fun Fact: I have been powwow dancing my entire life all over North America! I have even danced on an Amazon Prime show filming in New Zealand! Also just last year I won my first Iron Woman!'
+    const dancing = 'Fun Fact: I have been powwow dancing my entire life all over North America! I have even danced on an Amazon Prime show filming in New Zealand! Also I won my first Iron Woman last year!'
 
   return (
     <div className="about">
@@ -35,6 +35,7 @@ function About() {
                 }
                 </div>
                 <div className='card' onClick={() => handleClick(index)}>
+                  <div className="cardtext">
                     <p>
                         {index === 0 
                         ? averywords
@@ -49,6 +50,7 @@ function About() {
                         : null
                         }
                     </p>
+                  </div>
                 </div>
             </ReactCardFlip>
         ))}

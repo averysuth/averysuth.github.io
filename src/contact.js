@@ -2,6 +2,7 @@ import React from 'react'
 import insta from './img/instagram.png';
 import gmail from './img/new.png';
 import github from './img/github.png'
+import linkedin from './img/linkedin5 copy.png'
 
 function contact() {
   return (
@@ -19,6 +20,10 @@ function contact() {
             <div className='media'>
                 <a href="https://github.com/averysuth"><img src={github} alt="github"></img></a>
                 <p>Take a look at my github!</p>
+            </div>
+            <div className='media'>
+                <a href="https://www.linkedin.com/in/avery-sutherland-6224662a3/"><img src={linkedin} alt="linkedIn"></img></a>
+                <p>Find me on LinkedIn!</p>
             </div>
         </div> 
     </div>
