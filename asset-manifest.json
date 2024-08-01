@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.37389352.css",
-    "main.js": "/static/js/main.a72e4423.js",
+    "main.css": "/static/css/main.a8958351.css",
+    "main.js": "/static/js/main.de019db7.js",
     "static/media/IMG_7650.png": "/static/media/IMG_7650.2dd75f77a08bc51f37f9.png",
     "static/media/averyquebec.png": "/static/media/averyquebec.dd5d02e2cf2dde77d376.png",
+    "static/media/moments.png": "/static/media/moments.2e8649d4d0ba2d64aa97.png",
     "static/media/IMG_1075.jpg": "/static/media/IMG_1075.a9fbe09431a2fb704d13.jpg",
-    "static/media/giphy.gif": "/static/media/giphy.f8218d3a3a3ac96a8932.gif",
     "static/media/Avery.jpg": "/static/media/Avery.180610d0a505874d5617.jpg",
     "static/media/averyDancing.jpg": "/static/media/averyDancing.bdd8dbe82a021764be4b.jpg",
+    "static/media/searchengine.png": "/static/media/searchengine.659df706f200c084da99.png",
     "static/media/Unknown-1.jpeg": "/static/media/Unknown-1.39e1ac57fc6831dda69b.jpeg",
     "static/media/Avery-Sutherland.jpg": "/static/media/Avery-Sutherland.420fa6417e31c215dc6d.jpg",
     "static/media/studyspace.jpg": "/static/media/studyspace.c1d7f265df552a1d0075.jpg",
     "static/media/instagram.png": "/static/media/instagram.79535458a8a6d88f81d4.png",
+    "static/media/linkedin5 copy.png": "/static/media/linkedin5 copy.cdccee4bb93f75c349f0.png",
     "static/media/github.png": "/static/media/github.d3263084234dc705b2ae.png",
     "index.html": "/index.html",
-    "main.37389352.css.map": "/static/css/main.37389352.css.map",
-    "main.a72e4423.js.map": "/static/js/main.a72e4423.js.map"
+    "main.a8958351.css.map": "/static/css/main.a8958351.css.map",
+    "main.de019db7.js.map": "/static/js/main.de019db7.js.map"
   },
   "entrypoints": [
-    "static/css/main.37389352.css",
-    "static/js/main.a72e4423.js"
+    "static/css/main.a8958351.css",
+    "static/js/main.de019db7.js"
   ]
 }
